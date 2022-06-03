@@ -40,3 +40,106 @@
 .additional-infos{
   display: none;
 }
+
+/* Meta Infos
+###########################################################################  */
+
+.info-list{
+  padding-top: var(--l);
+  padding-bottom: var(--xl);
+}
+
+.info-list:after{
+  content:'.';
+  display: none;
+  clear: both;
+}
+
+.info-list dt{
+  font-weight: var(--fw-bold);
+  float: left;
+  margin-right: var(--xxs);
+}
+
+.info-list dt:after{
+  content: ':';
+}
+
+/* Intro Text
+###########################################################################  */
+
+.intro-text{
+  font-size: var(--l);
+  padding: var(--m);
+  width: 100%;
+  max-width: calc(var(--l) * 40);
+  line-height: var(--lh-normal);
+}
+
+
+/* Additional Infos
+###########################################################################  */
+
+.additional-infos{
+  display: none;
+}
+
+/* Card
+###########################################################################  */
+
+.card{
+  width: 100%;
+  background-color: var(--lightest);
+  border-radius: var(--radius-m);
+  box-shadow: var(--n-shadow-l);
+  padding-bottom: var(--l);
+  display: block;
+  transition: all var(--tr-fast);
+  z-index: 10;
+}
+
+.card > *:not(figure) {
+  margin-left: var(--m);
+  margin-right: var(--m);
+}
+
+.card figure img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card figure{
+  position: relative;
+  margin-top: var(--m);
+  margin-bottom: var(--m);
+}
+
+
+.card figcaption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--m);
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+}
+
+.card h2{
+  margin-bottom: var(--half);
+  font-size: var(--l);
+}
+
+.card blockquote{
+  font-family: var(--ff-serif);
+}
+
+.card:hover{
+  margin-left: -40px;
+  transform: rotate(5deg);
+}
+
+.card:focus{
+  z-index: 0;
+}

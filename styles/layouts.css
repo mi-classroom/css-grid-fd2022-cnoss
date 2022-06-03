@@ -16,17 +16,14 @@
 }
 
 
-/* Card
+/* Overview
 ###########################################################################  */
 
-.card{
-  width: clamp(300px, 50%, 800px);
-  background-color: var(--lightest);
-  border-radius: var(--radius-m);
-  overflow: hidden;
-  box-shadow: var(--n-shadow-l);
+.overview{
+  padding: 0;
+  margin: var(--m);
+  display: grid;
+  gap: var(--m);
+  grid-template-columns: repeat(auto-fill, minmax(var(--tile-width), 1fr));
 }
 
-.card figcaption{
-  padding: var(--l) var(--m) var(--xl) var(--m);
-}
